@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 木牛流马
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
+description: 'Do not choose to be at ease when you can bear the most hardships.'
+keywords: '嵌入式，stm32，Linux'
+author: 王小硕
 language: en
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
