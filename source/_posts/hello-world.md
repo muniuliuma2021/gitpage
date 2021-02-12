@@ -1,38 +1,74 @@
 ---
-title: Hello World
+title: 使用hexo和github 搭建博客
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+#### 1.环境准备：
 
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
+​    安装git和nodejs
+​    安装hexo: 
 
 ``` bash
-$ hexo server
+$npm install -g hexo-cli
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
 
-### Generate static files
+
+#### 2.初始化gitpage
 
 ``` bash
-$ hexo generate
+​$hexo init <folder>   #e.g: hexo init gitpage
+​$cd <folder>          #e.g: cd gitpage
+​$npm install
 ```
 
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
+#### 3.本地测试是否成功
 
 ``` bash
-$ hexo deploy
-```
+​$hexo clean
+​$hexo g # 生成
+​$hexo s #hexo s是开启本地预览服务，打开浏览器访问 http://localhost:4000
+``` 
+执行以上命令之后，hexo就会在public文件夹生成相关html文件，这些文件将来都是要提交到github去的;
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+#### 4.配置_config.yml中有关deploy的部分：
+
+``` bash
+$npm install hexo-deployer-git --save
+``` 
+配置/_config.yml中有关deploy的部分(注意格式，很重要，不然无法部署):
+
+![config_deploy](https://github.com/muniuliuma2021/gitpage/tree/master/source/about/image/config_deploy.png)
+
+#### 5.部署并在github备份源码
+
+``` bash
+​hexo deploy  #部署到muniuliuma2021.github.io
+​gitpush           #push 到GitHub备份
+``` 
+
+#### 6.修改主题
+
+​在https://hexo.io/themes 下载喜欢的主题，我选的是cactus
+``` bash
+​$cd gitpage
+​$git clone https://github.com/probberechts/hexo-theme-cactus.git themes/cactus
+```
+​修改/_cibfug.yml文件
+​   -theme: landscape
+​   +theme: cactus
+
+#### 7.上传github备份
+
+#### 8.修改头像等
+
+#### 9.github备份
+
+#### 10.添加/修改个人信息
+
+#### 11.github备份
+
+12.添加tag：Deployment_complete
+``` bash
+git tag -a Deployment_complete
+git push Deployment_complete origin
+``` 
