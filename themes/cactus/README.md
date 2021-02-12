@@ -166,7 +166,6 @@ Therefore, update the theme's `_config.yml`:
 ```yml
 social_links:
   github: your-github-url
-  twitter: your-twitter-url
   NAME: your-NAME-url
 ```
 
