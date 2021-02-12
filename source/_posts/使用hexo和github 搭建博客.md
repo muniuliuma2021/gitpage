@@ -1,4 +1,4 @@
----
+﻿---
 title: 使用hexo和github 搭建博客
 ---
 
@@ -36,8 +36,12 @@ $npm install -g hexo-cli
 $npm install hexo-deployer-git --save
 ``` 
 配置/_config.yml中有关deploy的部分(注意格式，很重要，不然无法部署):
-
-![config_deploy](https://github.com/muniuliuma2021/gitpage/tree/master/source/about/image/config_deploy.png)
+```c
+deploy:
+  type: git
+  repo: git@github.com:muniuliuma2021/muniuliuma2021.github.io.git
+  branch: master
+```
 
 #### 5.部署并在github备份源码
 
