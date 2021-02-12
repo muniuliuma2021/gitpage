@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: https://github.com/muniuliuma2021
+#projects_url: https://github.com/muniuliuma2021
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -17,7 +17,8 @@ nav:
   Home: /
   About: /about/
   Learning: /archives/
-  Github: projects_url
+  #Github: projects_url
+  Github: https://github.com/muniuliuma2021
 
 
 # Links to your social media accounts.
