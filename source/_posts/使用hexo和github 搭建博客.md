@@ -1,5 +1,8 @@
 ﻿---
 title: 使用hexo和github 搭建博客
+date: 2021-2-12 13:32:53
+tags:
+- Skill
 ---
 
 #### 1.环境准备：
@@ -71,7 +74,7 @@ deploy:
 
 #### 11.github备份
 
-12.添加tag：Deployment_complete
+#### 12.添加tag：Deployment_complete
 ``` bash
 git tag -a Deployment_complete
 git push Deployment_complete origin
