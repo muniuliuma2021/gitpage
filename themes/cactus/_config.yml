@@ -15,8 +15,8 @@ direction: ltr
 # languages/*.yml
 nav:
   Home: /
-  About: /about/
   Learning: /archives/
+  About: /about/
   #Github: projects_url
   Github: https://github.com/muniuliuma2021
 

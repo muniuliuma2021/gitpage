@@ -1,5 +1,5 @@
 ﻿---
-title: 使用hexo和github 搭建博客
+title: 使用hexo和github搭建博客
 date: 2021-2-12 13:32:53
 tags:
 - Skill
